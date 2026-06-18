@@ -29,7 +29,7 @@ body {
 .header {
     padding: 0.8rem 2rem;
     background: var(--white);
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     position: sticky;
     top: 0;
     z-index: 100;
@@ -94,38 +94,16 @@ body {
 
 /* Hero */
 .hero {
-    position: relative;
-    background: url('../img/hero.avif') center/cover no-repeat;
-    padding: 120px 20px;
+    background: URL('../img/hero.avif');
+    padding: 100px 20px;
     text-align: center;
     color: var(--white);
-    min-height: 500px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.hero-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(135deg, rgba(37, 99, 235, 0.8) 0%, rgba(14, 165, 233, 0.7) 50%, rgba(6, 182, 212, 0.6) 100%);
-}
-
-.hero-content {
-    position: relative;
-    z-index: 1;
-    max-width: 800px;
-    margin: 0 auto;
 }
 
 .hero h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin-bottom: 1rem;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-    font-weight: 800;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .subtitle {
@@ -144,12 +122,12 @@ body {
     cursor: pointer;
     font-weight: 600;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .cta-button:hover {
     transform: translateY(-3px);
-    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
 }
 
 /* Features */
@@ -171,7 +149,7 @@ body {
     background: var(--white);
     border-radius: 12px;
     text-align: center;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border-top: 4px solid var(--primary);
 }
@@ -193,7 +171,7 @@ body {
     max-width: 800px;
     margin: 0 auto;
     border-radius: 12px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
 }
 
 .contact-section h2 {
@@ -272,28 +250,6 @@ body {
     margin-top: 2rem;
 }
 
-.footer-content p {
-    margin: 0.5rem 0;
-}
-
-/* Contact Info */
-.contact-info {
-    background: var(--bg-light);
-    padding: 2rem;
-    border-radius: 8px;
-    margin-top: 1rem;
-}
-
-.contact-info p {
-    margin: 1rem 0;
-    font-size: 1.1rem;
-    color: var(--text-dark);
-}
-
-.contact-info strong {
-    color: var(--primary);
-}
-
 /* Carousel */
 .carousel-section {
     padding: 4rem 2rem;
@@ -350,7 +306,7 @@ body {
     cursor: pointer;
     transition: all 0.3s ease;
     z-index: 10;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .carousel-btn:hover {
@@ -426,7 +382,7 @@ body {
     }
 
     .hero h1 {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
 
     .features {
@@ -449,25 +405,16 @@ body {
     }
 
     .hero {
-        padding: 80px 15px;
-        min-height: 400px;
+        padding: 60px 15px;
     }
 
     .hero h1 {
-        font-size: 1.6rem;
-    }
-
-    .hero .subtitle {
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
 
     .cta-button {
         padding: 12px 24px;
         font-size: 1rem;
-    }
-
-    .contact-section {
-        padding: 2rem 1rem;
     }
 }
 
