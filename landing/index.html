@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="gl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Viaxes Galegos - A túa axencia de viaxes en Galicia. Viaxes a medida, experiencias únicas e os mellores destinos a prezos exclusivos. Descubre o mundo connosco.">
+    <meta name="keywords" content="viaxes, axencia de viaxes, Galicia, turismo, destinos, vacacións, roteiros">
+    <meta name="author" content="Viaxes Galegos">
+    <meta property="og:title" content="Viaxes Galegos - A túa axencia de viaxes">
+    <meta property="og:description" content="Viaxes a medida, experiencias únicas e os mellores destinos a prezos exclusivos.">
+    <meta property="og:type" content="website">
+    <title>Viaxes Galegos - A túa axencia de viaxes</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <a href="#inicio"><img src="img/logo.svg" alt="Viaxes Galegos" class="logo"></a>
+            <nav class="navbar" role="navigation" aria-label="Menú principal">
+                <a href="#inicio" class="nav-link active">Inicio</a>
+                <a href="#destinos" class="nav-link">Explora</a>
+                <a href="#rexistro" class="nav-link">Rexístrate</a>
+                <a href="#contacto" class="nav-link">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1>Descubre o Mundo connosco</h1>
+                <p class="subtitle">A axencia de viaxes de referencia en Galicia. Viaxes a medida, experiencias únicas e recordos que durarán toda a vida.</p>
+                <a href="#destinos" class="cta-button">Explorar Destinos</a>
+            </div>
+        </section>
+
+        <section id="destinos" class="carousel-section" aria-labelledby="carousel-title">
+            <h2 id="carousel-title">Os nosos Destinos</h2>
+            <div class="carousel" role="region" aria-label="Carrusel de destinos">
+                <button class="carousel-btn carousel-prev" aria-label="Anterior">&#10094;</button>
+                <div class="carousel-container">
+                    <div class="carousel-track">
+                        <div class="carousel-slide active">
+                            <img src="img/hero.avif" alt="Praias paradisíacas" loading="lazy">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="img/photo-1.avif" alt="Cidades europeas" loading="lazy">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="img/photo-2.avif" alt="Montañas e naturaleza" loading="lazy">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="img/photo-3.avif" alt="Experiencias culturais" loading="lazy">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="img/photo-4.avif" alt="Viaxes exóticas" loading="lazy">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="img/istockphoto-4.webp" alt="Ruta panorámica" loading="lazy">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="img/istockphoto-5.webp" alt="Paisaxes impresionantes" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-btn carousel-next" aria-label="Seguinte">&#10095;</button>
+                <div class="carousel-dots" role="tablist" aria-label="Slides do carrusel"></div>
+            </div>
+        </section>
+
+        <section class="features" id="servizos" aria-labelledby="features-title">
+            <h2 id="features-title" class="sr-only">Os nosos servizos</h2>
+            <div class="feature-block">
+                <h2>Viaxes a Medida</h2>
+                <p>Deseñamos cada viaxe segundo os teus gustos e necesidades. Dende escapadas de fin de semana ata roteiros pola Europa completa.</p>
+            </div>
+            <div class="feature-block">
+                <h2>As Mellores Tarifas</h2>
+                <p>Acordos exclusivos con hoteis, compañías aéreas e empresas de alugueiro de coches para che ofrecer os mellores prezos do mercado.</p>
+            </div>
+            <div class="feature-block">
+                <h2>Asistencia 24/7</h2>
+                <p>O noso equipo de expertos está dispoñible todo o día para axudarche en calquera imprevisto durante a túa viaxe.</p>
+            </div>
+        </section>
+
+        <section id="rexistro" class="contact-section" aria-labelledby="rexistro-title">
+            <h2 id="rexistro-title">Rexístrate</h2>
+            <form class="contact-form" action="#" method="post" novalidate>
+                <div class="form-group">
+                    <label for="nome">Nome completo <span aria-hidden="true">*</span></label>
+                    <input type="text" id="nome" name="nome" required aria-required="true" autocomplete="name" placeholder="Introduce o teu nome completo">
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo electrónico <span aria-hidden="true">*</span></label>
+                    <input type="email" id="email" name="email" required aria-required="true" autocomplete="email" placeholder="exemplo@correo.com">
+                </div>
+                <div class="form-group">
+                    <label for="telefono">Teléfono <span aria-hidden="true">*</span></label>
+                    <input type="tel" id="telefono" name="telefono" required aria-required="true" autocomplete="tel" pattern="[0-9]{9}" placeholder="123456789">
+                </div>
+                <div class="form-group">
+                    <label for="mensaje">Mensaxe <span aria-hidden="true">*</span></label>
+                    <textarea id="mensaje" name="mensaje" rows="5" required aria-required="true" placeholder="Cóntanos que tipo de viaxes che gustaría facer..."></textarea>
+                </div>
+                <button type="submit" class="submit-button">Enviar Rexistro</button>
+            </form>
+        </section>
+
+        <section id="contacto" class="contact-section" aria-labelledby="contact-title">
+            <h2 id="contact-title">Contacto</h2>
+            <div class="contact-info">
+                <p><strong>Dirección:</strong> Rua da Paz, 15 - Santiago de Compostela</p>
+                <p><strong>Teléfono:</strong> 900 123 456</p>
+                <p><strong>Email:</strong> info@viaxesgalegos.com</p>
+                <p><strong>Horario:</strong> Luns a Venres de 9:00 a 20:00</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2026 Viaxes Galegos. Todos os dereitos reservados.</p>
+            <p>Creado con amor en Galicia</p>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
